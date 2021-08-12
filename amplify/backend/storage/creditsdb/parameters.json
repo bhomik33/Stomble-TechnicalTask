@@ -1,0 +1,7 @@
+{
+    "tableName": "creditsdb",
+    "partitionKeyName": "name",
+    "partitionKeyType": "S",
+    "sortKeyName": "number",
+    "sortKeyType": "S"
+}

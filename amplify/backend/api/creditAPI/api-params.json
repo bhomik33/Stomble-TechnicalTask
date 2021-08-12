@@ -1,0 +1,42 @@
+{
+  "paths": [
+    {
+      "name": "/credits",
+      "lambdaFunction": "creditsfunction",
+      "privacy": {
+        "private": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ]
+      },
+      "policyResourceName": "/credits"
+    }
+  ],
+  "resourceName": "creditAPI",
+  "apiName": "creditAPI",
+  "functionArns": [
+    {
+      "lambdaFunction": "creditsfunction"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 0,
+    "authRoleName": "amplify-technicaltask4-dev-184145-authRole",
+    "unAuthRoleName": "amplify-technicaltask4-dev-184145-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "creditsfunction",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
